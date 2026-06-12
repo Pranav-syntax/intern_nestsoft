@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h1>Dashboard</h1>
+    <p>Welcome, {{ user.username }}.</p>
+    <p>Total cars in system: <strong>{{ car_count }}</strong></p>
+    <a class="button-link" href="{% url 'car_list' %}">Manage Cars</a>
+</div>
+{% endblock %}
